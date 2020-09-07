@@ -1,0 +1,48 @@
+{
+    "name": "Healwire App",
+    "description": "Healwire ppp is an online medical store",
+    "keywords": [
+        "healwire",
+        "medicine",
+        "online cart"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "laravel/framework": "4.2.*",
+        "intervention/image": "dev-master",
+        "vinelab/http": "dev-master",
+        "latrell/captcha": "1.1",
+        "barryvdh/laravel-migration-generator": "dev-master",
+        "maatwebsite/excel": "~1.3"
+    },
+    "autoload": {
+        "classmap": [
+            "app/commands",
+            "app/controllers",
+            "app/models",
+            "app/database/migrations",
+            "app/database/seeds",
+            "app/tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "php artisan clear-compiled",
+            "php artisan optimize"
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable"
+
+
+}

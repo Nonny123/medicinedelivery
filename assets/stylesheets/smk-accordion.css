@@ -1,0 +1,418 @@
+.smk_accordion {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*border-bottom: 1px solid #ccc;*/
+
+}
+
+/**
+ * --------------------------------------------------------------
+ * Section
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in {
+
+    border: 1px solid #ccc;
+    /*border-bottom: 1px solid #ccc;*/
+    position: relative;
+    z-index: 10;
+    margin-top: -1px;
+    overflow: hidden;
+}
+
+/**
+ * --------------------------------------------------------------
+ * Head
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in .acc_head {
+    position: relative;
+    background: #FDFDFD;
+    padding: 10px;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+}
+
+.smk_accordion .accordion_in .acc_head .acc_icon_expand {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -9px;
+    background: url(../images/plusminus.png) center 0;
+}
+
+/**
+ * --------------------------------------------------------------
+ * Content
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in .acc_content {
+    background: #fff;
+    color: #7B7E85;
+    padding: 3px 10px;
+}
+
+.smk_accordion .accordion_in .acc_content h1:first-of-type,
+.smk_accordion .accordion_in .acc_content h2:first-of-type,
+.smk_accordion .accordion_in .acc_content h3:first-of-type,
+.smk_accordion .accordion_in .acc_content h4:first-of-type,
+.smk_accordion .accordion_in .acc_content h5:first-of-type,
+.smk_accordion .accordion_in .acc_content h6:first-of-type {
+    margin-top: 10px;
+}
+
+/**
+ * --------------------------------------------------------------
+ * General
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in:first-of-type,
+.smk_accordion .accordion_in:first-of-type .acc_head {
+    /*border-radius: 3px 3px 0 0;*/
+
+}
+
+.smk_accordion .accordion_in:last-of-type,
+.smk_accordion .accordion_in:last-of-type .acc_content {
+    /*border-radius: 0 0 3px 3px;*/
+
+}
+
+.smk_accordion .accordion_in.acc_active > .acc_content {
+    display: block;
+}
+
+.smk_accordion .accordion_in.acc_active > .acc_head {
+
+    /*background-color: rgb(238, 244, 244);*/
+    background-color: #F9F9F9;;
+}
+
+.smk_accordion .accordion_in.acc_active > .acc_head .acc_icon_expand {
+    background: url(../images/plusminus.png) center -18px;
+}
+
+.smk_accordion.acc_with_icon .accordion_in .acc_head,
+.smk_accordion.acc_with_icon .accordion_in .acc_content {
+    padding-left: 0px;
+
+}
+
+/* Details Tabs */
+.detail-table th {
+    padding: 0;
+}
+
+.acc_content table th {
+    color: black;
+    font-size: 14px;
+}
+
+.date-added {
+    margin: 0 !important;
+}
+
+.price_breakdown div {
+    text-align: right;
+}
+
+.price_breakdown .row {
+    margin: 10px 0px 5px 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#page-wrap {
+    margin: 10px;
+}
+
+p {
+    margin: 0px 0;
+}
+
+/*
+Generic Styling, for Desktops/Laptops
+*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+
+}
+
+th {
+
+}
+
+td, th {
+    padding: 13px;
+
+}
+
+thead tr {
+    position: relative;
+    font-size: 12px;
+
+}
+
+tr {
+}
+
+td {
+    /* Behave  like a "row" */
+
+    position: relative;
+    padding-left: 4%;
+    font-size: 12px;
+}
+
+.smk_accordion td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.Table_cnt {
+
+    display: table;
+    position: relative;
+    left: 512px;
+
+}
+
+.download-btn {
+    background: #AAE0AA;
+}
+
+.icon-download {
+    height: 25px;
+    width: 25px;
+    background-position: -16px -57px;
+    margin-top: -7px;
+}
+
+.prescription-buttons {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+
+.no-items {
+    text-align: center;
+    padding: 15px;
+    color: #EC0909;
+}
+
+@media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .text-align-responsive {
+        text-align: right !important;
+    }
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+        text-align: center;
+    }
+
+    .Table_cnt {
+        display: table;
+        position: relative;
+        left: 26px;
+
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    .smk_accordion td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .smk_accordion td:before {
+        /* Now like a table header */
+        position: absolute;
+        top: 14px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .tab-cart td {
+        padding: 15px 8px !important;
+    }
+
+    .tab-cart td p {
+        white-space: normal;
+        padding: 0;
+    }
+
+    .tab-cart th:nth-child(1), .tab-cart td:nth-child(1) {
+        padding: 15px 8px !important;
+        font-size:14px;
+    }
+
+    /*
+    Label the data
+    */
+    .smk_accordion td:nth-of-type(1):before {
+        content: "Prescription";
+    }
+
+    .smk_accordion td:nth-of-type(2):before {
+        content: "Medicine";
+    }
+
+    .smk_accordion td:nth-of-type(3):before {
+        content: "Price/Qty";
+    }
+
+    .smk_accordion td:nth-of-type(4):before {
+        content: "Sub Total";
+    }
+
+    .smk_accordion td:nth-of-type(5):before {
+        content: "Unit Disc";
+    }
+
+    .smk_accordion td:nth-of-type(6):before {
+        content: "Discount";
+    }
+
+    .smk_accordion td:nth-of-type(7):before {
+        content: "Price";
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        width: 600px;
+    }
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 320px;
+    }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+        width: 495px;
+    }
+
+    table, thead {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+.Row {
+    display: table-row;
+}
+
+.Cell {
+    display: table-cell;
+    border-width: thin;
+    text-align: center;
+    width: 50%;
+    padding-top: 24px;
+}
+
+.bg_clr {
+    font-size: 15px;
+
+}
+
+.Table_cnt {
+    width: 100%;
+    left: 0;
+}
+
+.Table_cnt .row .Cell:first-of-type {
+    width: 85%;
+    text-align: right;
+}
+
+.Table_cnt .row .Cell:last-of-type {
+    width: 15%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 767px), (max-device-width: 767px) and (min-device-width: 481px) {
+    .Table_cnt {
+        display: table;
+        position: relative;
+        left: 0px;
+        width: 100%;
+
+    }
+
+    .Table_cnt .row .Cell:first-of-type {
+        width: 50%;
+        text-align: center;
+    }
+
+    .Table_cnt .row .Cell:last-of-type {
+        width: 50%;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px), (max-device-width: 1024px) and (min-device-width: 768px) {
+    .Table_cnt {
+        display: table;
+        position: relative;
+        left: 0px;
+        width: 100%;
+    }
+}

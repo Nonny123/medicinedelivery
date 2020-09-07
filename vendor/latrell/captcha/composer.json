@@ -1,0 +1,22 @@
+{
+    "name": "latrell/captcha",
+    "description": "Captcha Package for Laravel 4",
+    "keywords": ["L4", "Laravel 4", "Laravel", "Captcha", "security", "captcha image"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Latrell Chan",
+            "email": "i@latrell.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "gregwar/captcha": "v1.0.11"
+    },
+    "autoload": {
+        "psr-0": {
+            "Latrell\\Captcha\\": "src/"
+        }
+    }
+}
