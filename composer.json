@@ -14,7 +14,8 @@
         "vinelab/http": "dev-master",
         "latrell/captcha": "1.1",
         "barryvdh/laravel-migration-generator": "dev-master",
-        "maatwebsite/excel": "~1.3"
+        "maatwebsite/excel": "~1.3",
+        "ext-mcrypt": "*"
     },
     "autoload": {
         "classmap": [
