@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae385a2a33d07e1837d5a46cb609b043",
+    "content-hash": "6c7494f1345799759548e4ffb1883f72",
     "packages": [
         {
             "name": "barryvdh/laravel-migration-generator",
@@ -3247,7 +3247,7 @@
     "prefer-lowest": false,
     "platform": {
         "ext-mcrypt": "*",
-        "php": "^5.6.16"
+        "php": "5.6.40"
     },
     "platform-dev": [],
     "plugin-api-version": "1.1.0"
