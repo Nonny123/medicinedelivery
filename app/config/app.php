@@ -88,7 +88,7 @@
             'Illuminate\Routing\ControllerServiceProvider',
             'Illuminate\Cookie\CookieServiceProvider',
             'Illuminate\Database\DatabaseServiceProvider',
-            'Illuminate\Encryption\EncryptionServiceProvider',
+            'Thomaswelton\LaravelMcryptFaker\NoEncryptionServiceProvider',
             'Illuminate\Filesystem\FilesystemServiceProvider',
             'Illuminate\Hashing\HashServiceProvider',
             'Illuminate\Html\HtmlServiceProvider',
